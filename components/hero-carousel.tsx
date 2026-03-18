@@ -18,48 +18,45 @@ export function HeroCarousel() {
   }, [next]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-black flex items-center justify-center">
+    <section className="relative w-full overflow-hidden bg-black">
       <div className="relative w-full h-[60vh] min-h-[450px] sm:h-[70vh] md:h-[80vh]">
 
         {heroSlides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               index === current ? "opacity-100 z-20" : "opacity-0 z-10"
             }`}
           >
-            {/* 🔥 Blur Background (fills empty space nicely) */}
+
+            {/* 🔥 Background Fill (NO EMPTY SPACE) */}
             <div className="absolute inset-0">
               <Image
                 src={slide.image}
                 alt=""
                 fill
-                className="object-cover blur-2xl scale-110 opacity-40"
+                className="object-cover blur-xl scale-110 opacity-50"
               />
             </div>
 
-            {/* ✅ Main Image (NO CROP on mobile, COVER on desktop) */}
-            <div
-              className={`absolute inset-0 flex items-center justify-center transition-transform duration-[6000ms] ease-linear ${
-                index === current ? "scale-105" : "scale-100"
-              }`}
-            >
+            {/* ✅ MAIN IMAGE (FULL IMAGE ALWAYS VISIBLE) */}
+            <div className="absolute inset-0 flex items-center justify-center">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
                 priority={index === 0}
-                className="object-contain md:object-cover"
+                className="object-contain"
               />
             </div>
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/60" />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
               <div className="max-w-3xl">
-                <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wide text-white">
+                <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
                   {slide.title}
                 </h1>
 
@@ -70,14 +67,14 @@ export function HeroCarousel() {
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                   <Link
                     href="/products"
-                    className="rounded-md bg-white px-8 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
+                    className="rounded-md bg-white px-8 py-3 text-sm font-semibold text-black hover:bg-gray-200"
                   >
                     Shop Now
                   </Link>
 
                   <Link
                     href="/about"
-                    className="rounded-md border border-white px-8 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                    className="rounded-md border border-white px-8 py-3 text-sm font-semibold text-white hover:bg-white hover:text-black"
                   >
                     Learn More
                   </Link>
@@ -95,7 +92,7 @@ export function HeroCarousel() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${
+            className={`h-2 rounded-full transition-all ${
               index === current
                 ? "w-8 bg-white"
                 : "w-2 bg-white/40 hover:bg-white/70"
