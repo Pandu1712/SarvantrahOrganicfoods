@@ -18,8 +18,8 @@ export function HeroCarousel() {
   }, [next]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-black">
-      <div className="relative h-[60vh] min-h-[450px] sm:h-[70vh] md:h-[80vh]">
+    <section className="relative w-full overflow-hidden bg-black flex items-center justify-center">
+      <div className="relative w-full h-[60vh] min-h-[450px] sm:h-[70vh] md:h-[80vh]">
 
         {heroSlides.map((slide, index) => (
           <div
@@ -28,10 +28,20 @@ export function HeroCarousel() {
               index === current ? "opacity-100 z-20" : "opacity-0 z-10"
             }`}
           >
-            {/* Image with Zoom Effect */}
+            {/* 🔥 Blur Background (fills empty space nicely) */}
+            <div className="absolute inset-0">
+              <Image
+                src={slide.image}
+                alt=""
+                fill
+                className="object-cover blur-2xl scale-110 opacity-40"
+              />
+            </div>
+
+            {/* ✅ Main Image (NO CROP on mobile, COVER on desktop) */}
             <div
-              className={`absolute inset-0 transition-transform duration-[6000ms] ease-linear ${
-                index === current ? "scale-110" : "scale-100"
+              className={`absolute inset-0 flex items-center justify-center transition-transform duration-[6000ms] ease-linear ${
+                index === current ? "scale-105" : "scale-100"
               }`}
             >
               <Image
@@ -39,7 +49,7 @@ export function HeroCarousel() {
                 alt={slide.title}
                 fill
                 priority={index === 0}
-                className="object-cover"
+                className="object-contain md:object-cover"
               />
             </div>
 
@@ -79,7 +89,7 @@ export function HeroCarousel() {
 
       </div>
 
-      {/* Minimal Dots */}
+      {/* Dots */}
       <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-3">
         {heroSlides.map((_, index) => (
           <button
