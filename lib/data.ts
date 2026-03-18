@@ -288,11 +288,7 @@ export const heroSlides = [
     title: "Taste the Tradition",
     subtitle: "Handcrafted with love using ancient grains",
   },
-  {
-    image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1400&h=600&fit=crop",
-    title: "Nutrition in Every Bite",
-    subtitle: "Buy 4 boxes (above Rs.1000) and get FREE delivery!",
-  },
+ 
 ];
 
 export const galleryImages = [
