@@ -274,17 +274,17 @@ export const products: Product[] = [
 
 export const heroSlides = [
   {
-    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1400&h=600&fit=crop",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850588/IMG_2956_cmxwkk.png",
     title: "Pure Millet Goodness",
     subtitle: "Discover the power of millets with Sarvantrah Organics",
   },
   {
-    image: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=1400&h=600&fit=crop",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850590/IMG_2957_ok1h77.png",
     title: "Healthy Snacking Redefined",
     subtitle: "From farm to your table - 100% organic millet snacks",
   },
   {
-    image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1400&h=600&fit=crop",
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850594/IMG_2955_l9tvcq.png",
     title: "Taste the Tradition",
     subtitle: "Handcrafted with love using ancient grains",
   },
