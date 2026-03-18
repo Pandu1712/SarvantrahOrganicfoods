@@ -296,18 +296,16 @@ export const heroSlides = [
 ];
 
 export const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop", alt: "Millet farming fields" },
-  { src: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=400&fit=crop", alt: "Traditional millet chikkis" },
-  { src: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=400&fit=crop", alt: "Millet cookies freshly baked" },
-  { src: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&h=400&fit=crop", alt: "Healthy food spread" },
-  { src: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop", alt: "Millet chapathis preparation" },
-  { src: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop", alt: "Health drink mixes" },
-  { src: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=600&h=400&fit=crop", alt: "Organic ingredients" },
-  { src: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=600&h=400&fit=crop", alt: "Fresh nutritious food" },
-  { src: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&h=400&fit=crop", alt: "Cheese millet balls" },
-  { src: "https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=600&h=400&fit=crop", alt: "Energy mix preparations" },
-  { src: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop", alt: "Fresh chapathis" },
-  { src: "https://images.unsplash.com/photo-1604467707321-70d009801bf4?w=600&h=400&fit=crop", alt: "Millet snacks variety" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850592/IMG_2946_dm9ohb.png", alt: "Millet farming fields" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850584/IMG_2945_qyc98q.png", alt: "Traditional millet chikkis" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850576/IMG_2941_c4edps.jpg", alt: "Millet cookies freshly baked" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850581/IMG_2937_qwyva3.jpg", alt: "Healthy food spread" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850577/IMG_2939_gqrlx7.jpg", alt: "Millet chapathis preparation" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850578/IMG_2940_uxoxec.jpg", alt: "Health drink mixes" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850581/IMG_2937_1_u06woc.jpg", alt: "Organic ingredients" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850578/IMG_2938_dairx8.jpg", alt: "Fresh nutritious food" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850575/IMG_2942_ekdt3d.jpg", alt: "Cheese millet balls" },
+  
 ];
 
 export const aboutContent = {
