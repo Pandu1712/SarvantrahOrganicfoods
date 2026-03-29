@@ -87,7 +87,7 @@ export const products: Product[] = [
     price: 250,
     additionalCharges: 35,
     description: "A powerful blend of multiple millets combined with pure jaggery for the ultimate nutritious chikki. Packed with protein, iron, and calcium to fuel your day with natural energy.",
-    image: "https://images.unsplash.com/photo-1604467707321-70d009801bf4?w=400&h=400&fit=crop",
+    image: "/images/products/multi-millet-power-chikki.png",
     status: "available",
   },
   {
