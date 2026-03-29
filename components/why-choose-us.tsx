@@ -3,23 +3,7 @@
 import { Leaf, Heart, Truck, Shield } from "lucide-react";
 
 /* ===== STORY STRIP ===== */
-const storyBlocks = [
-  {
-    title: "HOW IT STARTED",
-    description:
-      "What started as a Millet Paratha venture catering to schools and corporations is now India's Largest Millet Snacks Company.",
-  },
-  {
-    title: "WHAT WE DO",
-    description:
-      "With a strategic focus on Millet Snacks that reach a wider market, we are scaling production rapidly.",
-  },
-  {
-    title: "WHERE WE ARE",
-    description:
-      "Sustainable practices and healthy offerings have helped us skyrocket our growth up to 100% in its second year.",
-  },
-];
+
 
 /* ===== YOUR ORIGINAL FEATURES (UNCHANGED) ===== */
 const features = [
@@ -57,26 +41,6 @@ export function WhyChooseUs() {
         {/* ================= STORY STRIP ================= */}
         <div className="bg-black text-white">
 
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            {storyBlocks.map((block, index) => (
-              <div
-                key={block.title}
-                className={`px-6 py-10 text-center ${
-                  index !== storyBlocks.length - 1
-                    ? "md:border-r md:border-gray-700"
-                    : ""
-                }`}
-              >
-                <h3 className="text-sm sm:text-base font-bold tracking-widest uppercase">
-                  {block.title}
-                </h3>
-
-                <p className="mt-4 text-xs sm:text-sm text-gray-400 leading-relaxed max-w-md mx-auto">
-                  {block.description}
-                </p>
-              </div>
-            ))}
-          </div>
 
         </div>
 

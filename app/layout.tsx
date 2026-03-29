@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   keywords:
     'millet snacks, organic food, chikki, millet cookies, healthy snacking, Sarvantrah, organic, Andhra Pradesh',
   icons: {
-    icon: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1770978869/Logo_For_Sarvantrah_ivvgsa.png',
+    icon: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787973/WhatsApp_Image_2026-03-29_at_14.30.03_xrjmv5.jpg',
     shortcut:
-      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1770978869/Logo_For_Sarvantrah_ivvgsa.png',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787973/WhatsApp_Image_2026-03-29_at_14.30.03_xrjmv5.jpg',
     apple:
-      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1770978869/Logo_For_Sarvantrah_ivvgsa.png',
+      'https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787973/WhatsApp_Image_2026-03-29_at_14.30.03_xrjmv5.jpg',
   },
 }
 
@@ -43,8 +43,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased`.trim()}>
         <AppShell>{children}</AppShell>
       </body>
     </html>

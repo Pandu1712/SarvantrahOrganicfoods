@@ -15,7 +15,7 @@ export interface Category {
   slug: string;
   description: string;
   image: string;
-   status: "available" | "coming-soon";
+  status: "available" | "coming-soon";
 }
 
 export const WHATSAPP_NUMBER = "919491530079";
@@ -34,35 +34,35 @@ export const categories: Category[] = [
     slug: "millet-chikkis",
     description: "Traditional chikkis made with nutritious millets and natural sweeteners. A perfect healthy snack for all ages.",
     image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=400&fit=crop",
-     status: "available",
+    status: "available",
   },
   {
     name: "Cheesy Crunchy Hots",
     slug: "cheesy-crunchy-hots",
     description: "Crispy millet balls loaded with real cheese flavor. Healthy snacking meets cheesy indulgence.",
     image: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     name: "Healthy Mix",
     slug: "healthy-mix",
     description: "Nutritious millet-based health drink mixes and energy blends for a power-packed day.",
     image: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     name: "Classy Cookies",
     slug: "classy-cookies",
     description: "Delicious millet cookies baked to perfection with wholesome ingredients. Guilt-free indulgence!",
     image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     name: "Millet Chapathis",
     slug: "millet-chapathis",
     description: "Ready-to-cook millet chapathis for a wholesome and convenient meal option.",
     image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
 ];
 
@@ -110,7 +110,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "The classic combination of sesame seeds and millets, bound together with natural jaggery. Rich in calcium and iron, this chikki is a powerhouse of nutrition with an irresistible crunch.",
     image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop",
-   status: "available",
+    status: "available",
   },
   // Cheesy Crunchy Hots
   {
@@ -122,7 +122,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "Crispy millet balls coated with real cheese for an unforgettable taste. Made with whole grain millets, these snacks deliver a perfect balance of health and cheesy goodness.",
     image: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "ch-2",
@@ -133,7 +133,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "Spicy peri-peri seasoning meets creamy cheese on crispy millet balls. A fiery, flavorful snack that packs a punch while keeping things nutritious and wholesome.",
     image: "https://images.unsplash.com/photo-1621447504864-d8686e12698c?w=400&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "ch-3",
@@ -167,7 +167,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "A carefully crafted blend of multiple millets designed for a nutritious daily health drink. Rich in essential vitamins and minerals, it supports immunity and overall wellness.",
     image: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=400&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "hm-2",
@@ -190,7 +190,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "Wholesome cookies made with a blend of nutritious millets. Perfectly baked for a delightful crunch with every bite, these cookies make healthy snacking truly enjoyable.",
     image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=400&fit=crop",
-     status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "cc-2",
@@ -201,7 +201,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "Rich chocolate flavor meets the goodness of millets in these irresistible cookies. A chocolaty delight that satisfies your sweet tooth while keeping nutrition in check.",
     image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop",
-      status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "cc-3",
@@ -246,7 +246,7 @@ export const products: Product[] = [
     additionalCharges: 35,
     description: "Convenient ready-to-cook millet chapathis made with whole grain millets. Simply heat and serve for a nutritious, wholesome meal that saves time without compromising on health.",
     image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop",
-      status: "coming-soon",
+    status: "coming-soon",
   },
   {
     id: "mch-2",
@@ -288,20 +288,33 @@ export const heroSlides = [
     title: "Taste the Tradition",
     subtitle: "Handcrafted with love using ancient grains",
   },
- 
+
+  {
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787985/IMG_3352_lcqraa.png",
+    title: "Taste the Tradition",
+    subtitle: "Handcrafted with love using ancient grains",
+  },
+
+  {
+    image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787981/IMG_3353_pmk1h4.png",
+    title: "Taste the Tradition",
+    subtitle: "Handcrafted with love using ancient grains",
+  },
+
+
 ];
 
 export const galleryImages = [
-  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850592/IMG_2946_dm9ohb.png", alt: "Millet farming fields" },
-  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850584/IMG_2945_qyc98q.png", alt: "Traditional millet chikkis" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787984/IMG_3358_xzldbg.png", alt: "Millet farming fields" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787981/IMG_3364_hg7kyu.png", alt: "Traditional millet chikkis" },
   { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850576/IMG_2941_c4edps.jpg", alt: "Millet cookies freshly baked" },
-  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850581/IMG_2937_qwyva3.jpg", alt: "Healthy food spread" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787976/IMG_3361_ir6yld.png", alt: "Healthy food spread" },
   { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850577/IMG_2939_gqrlx7.jpg", alt: "Millet chapathis preparation" },
   { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850578/IMG_2940_uxoxec.jpg", alt: "Health drink mixes" },
-  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850581/IMG_2937_1_u06woc.jpg", alt: "Organic ingredients" },
+  { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1774787975/IMG_3363_xxmjxx.png", alt: "Organic ingredients" },
   { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850578/IMG_2938_dairx8.jpg", alt: "Fresh nutritious food" },
   { src: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1773850575/IMG_2942_ekdt3d.jpg", alt: "Cheese millet balls" },
-  
+
 ];
 
 export const aboutContent = {
