@@ -19,7 +19,7 @@ export function HeroCarousel() {
 
   return (
     <section className="relative w-full overflow-hidden bg-black">
-      <div className="relative w-full h-[60vh] min-h-[450px] sm:h-[70vh] md:h-[80vh]">
+      <div className="relative w-full aspect-[3/2] md:aspect-[3/2] lg:aspect-[3/2]">
 
         {heroSlides.map((slide, index) => (
           <div
@@ -29,15 +29,7 @@ export function HeroCarousel() {
             }`}
           >
 
-            {/* 🔥 Background Fill (NO EMPTY SPACE) */}
-            <div className="absolute inset-0">
-              <Image
-                src={slide.image}
-                alt=""
-                fill
-                className="object-cover blur-xl scale-110 opacity-50"
-              />
-            </div>
+
 
             {/* ✅ MAIN IMAGE (FULL IMAGE ALWAYS VISIBLE) */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -51,30 +43,22 @@ export function HeroCarousel() {
             </div>
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-black/20" />
 
-            {/* Content */}
-            <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
+            {/* Content (Buttons Only) */}
+            <div className="absolute inset-x-0 bottom-20 flex items-center justify-center px-6 text-center">
               <div className="max-w-3xl">
-                <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
-                  {slide.title}
-                </h1>
-
-                <p className="mb-8 text-sm sm:text-base md:text-lg text-gray-300">
-                  {slide.subtitle}
-                </p>
-
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                   <Link
                     href="/products"
-                    className="rounded-md bg-white px-8 py-3 text-sm font-semibold text-black hover:bg-gray-200"
+                    className="rounded-md bg-[#D4A017] px-8 py-3 text-sm font-semibold text-white hover:bg-[#B8860B] shadow-lg transition-all"
                   >
                     Shop Now
                   </Link>
 
                   <Link
                     href="/about"
-                    className="rounded-md border border-white px-8 py-3 text-sm font-semibold text-white hover:bg-white hover:text-black"
+                    className="rounded-md border border-white px-8 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white hover:text-black transition-all"
                   >
                     Learn More
                   </Link>

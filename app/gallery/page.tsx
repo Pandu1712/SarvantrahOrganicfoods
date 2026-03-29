@@ -41,19 +41,19 @@ export default function GalleryPage() {
       <section className="pb-20">
         <div className="mx-auto max-w-7xl px-6">
 
-          <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
             {galleryImages.map((image, idx) => (
               <div
                 key={idx}
-                className="group relative cursor-pointer overflow-hidden bg-gray-100"
+                className="group relative mb-6 cursor-pointer overflow-hidden break-inside-avoid bg-gray-100 rounded-lg"
                 onClick={() => openLightbox(idx)}
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={600}
-                  height={600}
-                  className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105"
+                  height={800}
+                  className="w-full h-auto transition duration-500 group-hover:scale-105"
                 />
 
                 {/* Overlay */}
